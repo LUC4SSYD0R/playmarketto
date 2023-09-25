@@ -8,6 +8,7 @@ $password = "lucassydor";
    try {
        $conexao = new PDO("mysql:host=".$host.";dbname=".$database, $username, $password);
        $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+       $conexao->exec("set names utf8");
     //    echo "Sucesso de conexão com a base";
 
 
